@@ -11,6 +11,26 @@ float frandom() {
   return ret;
 }
 
+float mc_pi(int x)
+{ 
+  int points=0;
+  for (int i=0; i<n;i++)
+  {
+    float x=frandom(),y=frandom();
+    float value;
+    value=sqrt( pow(x,2)+pow(y,2) );
+    if (value <=1)
+    {
+      points=points+1;
+    }
+  }
+ float ratio;
+ ratio=(float)points/n;
+ return 4*ratio;
+}
+
+
+
 int main(void) {
   float pi0;
   float pi1;
