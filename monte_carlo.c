@@ -11,7 +11,7 @@ float frandom() {
   return ret;
 }
 
-float mc_pi(int x)
+float mc_pi(int n)
 { 
   int points=0;
   for (int i=0; i<n;i++)
